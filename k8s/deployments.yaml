@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: patient-service
-          image: narasateja/patient-service:v1
+          image: hcacrd95f70.azurecr.io/patient:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
@@ -86,7 +86,7 @@ spec:
     spec:
       containers:
         - name: application-service
-          image: narasateja/application-service:v1
+          image: hcacrd95f70.azurecr.io/application:test
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3001
@@ -151,7 +151,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: narasateja/order-service:v1
+          image: hcacrd95f70.azurecr.io/order:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
